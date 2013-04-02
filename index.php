@@ -96,6 +96,9 @@ if(!function_exists('avia_feedbackbox_init'))
 		{
 			//create post type
 			$this->_createPostType();
+
+			// Create taxonomy for categorization
+			$this->_createTaxonomies();
 		
 			//get the backend settings
 			$this->_get_settings();
