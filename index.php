@@ -363,6 +363,35 @@ if(!function_exists('avia_feedbackbox_init'))
 		
 		register_post_type( 'feedback' , $args );
 		}
+
+		protected function _createTaxonomies()
+		{
+			$labels = array(
+			    'name'                => _x( 'Categories', 'feedback-categories' ),
+			    'singular_name'       => _x( 'Category', 'feedback-categories' ),
+			    'search_items'        => __( 'Search Categories' ),
+			    'all_items'           => __( 'All Categories' ),
+			    'parent_item'         => __( 'Parent Category' ),
+			    'parent_item_colon'   => __( 'Parent Category:' ),
+			    'edit_item'           => __( 'Edit Category' ), 
+			    'update_item'         => __( 'Update Category' ),
+			    'add_new_item'        => __( 'Add New Category' ),
+			    'new_item_name'       => __( 'New Category' ),
+			    'menu_name'           => __( 'Category' )
+			  ); 	
+
+			  $taxonomy_args = array(
+				'public'              => FALSE,
+			    'hierarchical'        => TRUE,
+			    'labels'              => $labels,
+			    'show_ui'             => TRUE,
+			    'show_admin_column'   => TRUE,
+			    'query_var'           => FALSE,
+			    'rewrite'             => array( 'slug' => 'genre' )
+			  );
+
+		register_taxonomy( 'feedback-categories', 'feedback', $taxonomy_args );
+		}
 		
 		
 			
