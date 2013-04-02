@@ -1,0 +1,818 @@
+/******************************************************************************************************************************************************************************************************************************************************************************************
+Generic styles: All skins!!
+******************************************************************************************************************************************************************************************************************************************************************************************/
+
+#avia_feedback_box{
+position: relative;
+width:100%;
+margin: 20px 0 0 0;
+clear: both;
+}
+
+/*navigation*/
+
+.avia_feedback_navigation{
+float: left;
+margin:0 0 30px 0;
+font-size: 12px;
+width:100%;
+}
+
+.avia_feedback_navigation a, .avia_feedback_info{
+border:1px solid #e1e1e1;
+text-decoration: none;
+display:block;
+float:left;
+margin-right:10px;
+padding:4px 8px;
+position: relative;
+}
+
+div .avia_feedback_add{
+float:right;
+margin:0;
+}
+
+div .avia_feedback_info{
+float:right;
+margin :0 0 0 10px;
+}
+
+
+.avia_info_hover{
+position: absolute;
+padding:20px;
+background: #000;
+color: #fff;
+width:300px;
+display: none;
+z-index: 1000;
+}
+
+.avia_feedback_info{
+cursor: default;
+}
+
+/*entry*/
+
+
+.avia_feedback_ajaxed, .avia_feedback_entry{
+clear:both;
+float:left;
+margin:0 0 27px;
+padding:0 0 20px;
+position:relative;
+width:100%;
+}
+
+.avia_feedback_entry_display_vote{
+height:70px; width:70px;
+border:1px solid #e1e1e1;
+padding:20px;
+text-align: center;
+position: absolute;
+top:0;
+left:0;
+}
+
+.avia_feedback_entry_vote_count{
+font-size:11px;
+}
+
+.avia_feedback_entry_vote_count strong{
+display: block;
+font-size:28px;
+line-height: 60px;
+
+}
+
+.avia_feedback_entry_content{
+min-height:160px;
+margin-left:130px;
+}
+
+#avia_feedback_box .avia_feedback_title{
+margin:0;
+padding:0;
+}
+
+#avia_feedback_box .uservotes{
+position: absolute;
+width:90px;
+line-height:31px;
+padding:0 10px;
+border:1px solid #e1e1e1;
+text-align: center;
+font-size: 11px;
+top:120px;
+left:0;
+}
+
+.avia_feedback_casted_votes{
+position: absolute;
+top:-10px;
+right:-10px;
+background: #fff;
+border: 1px solid #e1e1e1;
+line-height:27px;
+padding:0 10px;
+display: none;
+}
+
+.avia_feedback_comment{
+float:left;
+display:block;
+}
+
+.avia_feedback_comment_meta{
+float:right;
+display: block;
+}
+
+.avia_feedback_box_comments{
+display:block;
+clear: both;
+}
+
+.avia_feedback_box_comment{
+padding: 8px 0;
+}
+
+.avia_feedback_box_comment_author{
+display:block;
+font-weight:bold;
+}
+
+.avia_feedback_box_comment_gravatar{
+float:left;
+margin:0 10px 0px 0;
+}
+
+.avia_feedback_box_comment_gravatar img{
+display:block;
+float:left;
+}
+
+
+
+/*pagination*/
+.pagination {
+clear:both;
+padding:0 0 60px 0;
+position:relative;
+z-index:3;
+}
+
+.pagination span, .pagination a {
+display:block;
+float:left;
+font-size:11px;
+line-height:13px;
+margin: 2px 2px 2px 0;
+padding:6px 9px 5px 9px;
+text-decoration:none;
+width:auto;
+border:1px solid #e1e1e1;
+}
+
+.pagination .current{
+font-size:11px;
+padding:6px 9px 5px 9px;
+}
+
+/*Feedback Form*/
+
+.avia_feedback_form{
+display:none;
+position: relative;
+width:100%;
+}
+
+.avia_feedback_entry .avia_feedback_form{
+display:block;
+}
+
+.avia_feedback_inner_form{
+position: relative;
+padding:0 0 20px 0;
+clear: both;
+width:100%;
+overflow: hidden;
+}
+
+.avia_feedback_form label, .avia_feedback_form input, .avia_feedback_form textarea {
+display:block;
+}
+
+/*status*/
+.avia_feedback_status{
+position: absolute;
+top:2px;
+right:0px;
+height:24px;
+width:24px;
+line-height: 24px;
+font-size: 20px;
+cursor: default;
+}
+
+
+/*generic*/
+.avia_feedback_navigation a, .avia_feedback_info, .avia_feedback_entry_display_vote, .uservotes, .avia_feedback_casted_votes, .pagination span, .pagination a, .avia_info_hover, .avia_feedback_box_comment_meta, .avia_feedback_box_comment_text, .avia_notification{
+-moz-border-radius: 4px;
+-webkit-border-radius:4px;
+border-radius:4px;
+}
+
+.avia_feedback_box_comment_meta img{
+-moz-border-radius: 2px;
+-webkit-border-radius:2px;
+border-radius:2px;
+}
+
+div .avia_hidden{
+display:none;
+}
+
+div .avia_visible{
+display:block;
+}
+
+#avia_feedback_box a{
+outline: none;
+}
+
+.avia_ajax_loader{
+height:24px;
+width:24px;
+top:50px;
+right:0px;
+position: absolute;
+visibility: hidden;
+z-index: 100;
+background: transparent url('images/default/preload.gif') no-repeat center center;
+}
+
+.arrow_down {
+background:url("images/arrow.png") no-repeat scroll center center transparent;
+top:20px;
+height:20px;
+position:absolute;
+right:-10px;
+width:10px;
+}
+
+
+
+#avia_feedback_box .avia_error_field{
+color:#c10000;
+}
+
+#avia_feedback_box .avia_error_field input, #avia_feedback_box .avia_error_field textarea{
+border-color: #c10000;
+background: #fff;
+}
+
+textarea{
+padding:7px 3px;
+width:99%;
+}
+
+.avia_text_button{
+cursor:pointer;
+}
+
+.avia_text_input{
+width:40%;
+}
+
+.avia_clear{
+clear:both;
+}
+
+.avia_notification{
+padding-bottom:10px;
+overflow: hidden;
+}
+
+/******************************************************************************************************************************************************************************************************************************************************************************************
+LIGHT SKIN
+******************************************************************************************************************************************************************************************************************************************************************************************/
+
+
+.avia_light_skin{
+font-size: 13px;
+font-family: Arial,Helvetica;
+color: #666;
+}
+
+.avia_light_skin .avia_feedback_navigation a, .avia_light_skin .avia_feedback_info{
+padding:0px 8px 32px;
+font-size: 11px;
+color:#aaa;
+line-height:27px;
+font-weight: bold;
+min-width:40px;
+text-align: center;
+}
+
+.avia_light_skin .avia_feedback_navigation .avia_active_menu, .avia_light_skin .avia_feedback_navigation .avia_active_menu:hover{
+color:#222;
+}
+
+.avia_light_skin .avia_feedback_navigation a:hover{
+color:#444;
+}
+
+.avia_light_skin #avia_feedback_ajaxed .avia_feedback_title{
+color:#555;
+font-size: 22px;
+font-family: "Trebuchet MS", Arial,Helvetica;
+overflow:hidden;
+width:90%;
+font-weight: normal;
+}
+
+.avia_light_skin .avia_feedback_text{
+border-top: 1px dotted #aaa;
+}
+
+.avia_light_skin .avia_feedback_entry_display_vote{
+background:url("images/light/background.png") repeat-x bottom left #fff;
+color:#777;
+text-shadow: 1px 1px 0px #fff;
+}
+
+.avia_light_skin #avia_feedback_ajaxed .uservotes {
+background:url("images/light/background_small.png") repeat-x bottom left #fff;
+color:#777;
+text-decoration: none;
+text-shadow: 1px 1px 0px #fff;
+}
+
+.avia_light_skin #avia_feedback_ajaxed .uservotes:hover{
+background:url("images/light/background_small.png") repeat-x 0px 10px #fff;
+color:#999;
+}
+
+.avia_light_skin .avia_feedback_casted_votes{
+background:url("images/light/background_small.png") repeat-x bottom left #fff;
+color:#777;
+text-shadow: 1px 1px 0px #fff;
+}
+
+.avia_light_skin .avia_feedback_popular{
+background:url("images/light/heart.png") no-repeat center 27px transparent;
+}
+
+.avia_light_skin .avia_feedback_newest{
+background:url("images/light/new.png") no-repeat center 27px transparent;
+}
+
+.avia_light_skin .avia_feedback_progress{
+background:url("images/light/progress.png") no-repeat center 27px transparent;
+}
+
+.avia_light_skin .avia_feedback_finished{
+background:url("images/light/closed.png") no-repeat center 27px transparent;
+}
+
+.avia_light_skin .avia_feedback_info{
+background:url("images/light/info.png") no-repeat center 27px transparent;
+}
+
+.avia_light_skin .avia_feedback_add{
+background:url("images/light/add.png") no-repeat center 27px transparent;
+}
+
+.avia_light_skin .uservotes strong{
+background:url("images/light/plus_minus.png") no-repeat scroll 0 5px transparent;
+display:block;
+float:left;
+padding-left:25px;
+}
+
+.avia_light_skin .avia_feedback_comment{
+background:url("images/light/plus_minus_small.png") no-repeat scroll right 0 transparent;
+padding-right:19px;
+}
+
+.avia_light_skin div .avia_comment_open{
+background:url("images/light/plus_minus_small.png") no-repeat scroll right -20px transparent;
+}
+
+
+.avia_light_skin .avia_feedback_comment, .avia_light_skin .avia_feedback_comment_meta{
+color:#888;
+text-decoration: none;
+font-size: 11px;
+line-height: 21px;
+}
+
+div .avia_light_skin .avia_feedback_box_comment_meta{
+line-height: 17px;
+border:1px solid #e1e1e1;
+padding:5px;
+font-size: 11px;
+overflow: hidden;
+background: url("images/light/background.png") repeat-x scroll left center #FFFFFF;
+position: relative;
+z-index: 10;
+}
+
+.avia_light_skin .avia_feedback_box_comment_text {
+border:1px solid #E1E1E1;
+font-size:12px;
+line-height:21px;
+padding:7px 0 1px 11px;
+position:relative;
+top:-6px;
+}
+
+.avia_light_skin #avia_feedback_ajaxed .avia_feedback_box_comment_text p{
+margin:0;
+padding:7px 0;
+}
+
+.avia_light_skin .avia_feedback_box_comment_gravatar img {
+border:1px solid #E1E1E1;
+padding:3px;
+background: #fff;
+}
+
+.avia_light_skin .avia_feedback_box_comment_author{
+
+font-size: 12px;
+text-shadow: 1px 1px 0px #fff;
+padding-top: 2px;
+}
+
+.avia_light_skin .avia_ajax_loader{
+top:65px;
+}
+
+.avia_light_skin input{
+background:#f8f8f8;
+padding:7px 7px;
+border:1px solid #e1e1e1;
+box-shadow:none;
+color:#666;
+}
+
+.avia_light_skin textarea{
+background:#f8f8f8;
+padding:7px 3px;
+border:1px solid #e1e1e1;
+width:98%;
+color:#666;
+}
+
+.avia_light_skin .avia_text_button{
+background: url("images/light/background_small.png") repeat-x scroll left bottom #FFFFFF;
+}
+
+.avia_light_skin .avia_text_button:hover{
+color:#333;
+background: #f8f8f8;
+}
+
+.avia_light_skin label{
+font-size: 11px;
+color: #999;
+}
+
+.avia_light_skin .avia_feedback_status{
+text-indent: -9999px;
+}
+
+.avia_light_skin .avia_feedback_status_info{
+background:url("images/light/info.png") no-repeat center center transparent;
+}
+
+.avia_light_skin .avia_feedback_status_progress{
+background:url("images/light/progress.png") no-repeat center center transparent;
+}
+
+.avia_light_skin .avia_feedback_status_completed{
+background:url("images/light/closed.png") no-repeat center center transparent;
+}
+
+.avia_light_skin .avia_feedback_status_declined{
+background:url("images/light/declined.png") no-repeat center center transparent;
+}
+
+.avia_light_skin .avia_notification{
+background:url("images/light/background_small.png") repeat-x scroll left bottom #FFFFFF;
+border:1px solid #E1E1E1;
+color:#999999;
+font-size:11px;
+line-height:19px;
+margin-bottom:20px;
+padding:10px;
+}
+
+.avia_light_skin .avia_notification_icon{
+height:24px;
+width:24px;
+float:left;
+display: block;
+margin: 7px 13px 7px 4px;
+}
+
+.avia_light_skin .avia_icon_avia_success{
+background:url("images/light/closed.png") no-repeat center center transparent;
+}
+
+.avia_light_skin .avia_icon_avia_error{
+background:url("images/light/info.png") no-repeat center center transparent;
+}
+
+.avia_light_skin #avia_feedback_ajaxed .avia_inactive, .avia_light_skin #avia_feedback_ajaxed .avia_inactive:hover{
+color:#aaa;
+background:url("images/light/background_small.png") repeat-x scroll left 10px #FFFFFF;
+cursor:default;
+}
+
+body .avia_info_hover_light_skin{
+font-size:12px;
+padding:14px 20px;
+font-family: "Arial","Helvetca";
+}
+
+body .avia_info_hover_light_skin p {
+padding:0.5em 0;
+}
+
+
+.avia_light_skin .avia_ajax_loader {
+background:url("images/light/preload.gif") no-repeat scroll center center transparent;
+}
+
+/******************************************************************************************************************************************************************************************************************************************************************************************
+Dark SKIN
+******************************************************************************************************************************************************************************************************************************************************************************************/
+
+.avia_dark_skin{
+font-size: 13px;
+font-family: Arial,Helvetica;
+color: #666;
+}
+
+.avia_dark_skin .avia_feedback_navigation a, .avia_dark_skin .avia_feedback_info{
+padding:0px 8px 32px;
+font-size: 11px;
+color:#aaa;
+line-height:27px;
+font-weight: bold;
+min-width:40px;
+text-align: center;
+}
+
+.avia_dark_skin .avia_feedback_navigation .avia_active_menu, .avia_dark_skin .avia_feedback_navigation .avia_active_menu:hover{
+color:#fff;
+}
+
+.avia_dark_skin .avia_feedback_navigation a, .avia_dark_skin .avia_feedback_info{
+border:1px solid #333;
+}
+
+.avia_dark_skin .avia_feedback_navigation a:hover{
+color:#444;
+}
+
+.avia_dark_skin #avia_feedback_ajaxed .avia_feedback_title{
+color:#555;
+font-size: 22px;
+font-family: "Trebuchet MS", Arial,Helvetica;
+overflow:hidden;
+width:90%;
+font-weight: normal;
+}
+
+.avia_dark_skin .avia_feedback_text{
+border-top: 1px dotted #aaa;
+}
+
+.avia_dark_skin .avia_feedback_entry_display_vote{
+background:url("images/dark/background.png") repeat-x bottom left #343434;
+color:#777;
+text-shadow: 1px 1px 0px #000;
+border:1px solid #333;
+}
+
+.avia_dark_skin #avia_feedback_ajaxed .uservotes {
+background:url("images/dark/background_small.png") repeat-x bottom left #343434;
+color:#777;
+text-decoration: none;
+text-shadow: 1px 1px 0px #000;
+border:1px solid #333;
+}
+
+.avia_dark_skin #avia_feedback_ajaxed .uservotes:hover{
+background:url("images/dark/background_small.png") repeat-x 0px 10px #343434;
+color:#999;
+}
+
+.avia_dark_skin .avia_feedback_casted_votes{
+background:url("images/dark/background_small.png") repeat-x bottom left #343434;
+color:#777;
+text-shadow: 1px 1px 0px #000;
+border:1px solid #333;
+}
+
+.avia_dark_skin .avia_feedback_popular{
+background:url("images/dark/heart.png") no-repeat center 27px transparent;
+}
+
+.avia_dark_skin .avia_feedback_newest{
+background:url("images/dark/new.png") no-repeat center 27px transparent;
+}
+
+.avia_dark_skin .avia_feedback_progress{
+background:url("images/dark/progress.png") no-repeat center 27px transparent;
+}
+
+.avia_dark_skin .avia_feedback_finished{
+background:url("images/dark/closed.png") no-repeat center 27px transparent;
+}
+
+.avia_dark_skin .avia_feedback_info{
+background:url("images/dark/info.png") no-repeat center 27px transparent;
+}
+
+.avia_dark_skin .avia_feedback_add{
+background:url("images/dark/add.png") no-repeat center 27px transparent;
+}
+
+.avia_dark_skin .uservotes strong{
+background:url("images/dark/plus_minus.png") no-repeat scroll 0 5px transparent;
+display:block;
+float:left;
+padding-left:25px;
+}
+
+.avia_dark_skin .avia_feedback_comment{
+background:url("images/dark/plus_minus_small.png") no-repeat scroll right 0 transparent;
+padding-right:19px;
+}
+
+.avia_dark_skin div .avia_comment_open{
+background:url("images/dark/plus_minus_small.png") no-repeat scroll right -20px transparent;
+}
+
+
+.avia_dark_skin .avia_feedback_comment, .avia_dark_skin .avia_feedback_comment_meta{
+color:#888;
+text-decoration: none;
+font-size: 11px;
+line-height: 21px;
+}
+
+div .avia_dark_skin .avia_feedback_box_comment_meta{
+line-height: 17px;
+border:1px solid #333;
+padding:5px;
+font-size: 11px;
+overflow: hidden;
+background: url("images/dark/background.png") repeat-x scroll left center #343434;
+position: relative;
+z-index: 10;
+}
+
+.avia_dark_skin .avia_feedback_box_comment_text {
+border:1px solid #333;
+font-size:12px;
+line-height:21px;
+padding:7px 0 1px 11px;
+position:relative;
+top:-6px;
+}
+
+.avia_dark_skin #avia_feedback_ajaxed .avia_feedback_box_comment_text p{
+margin:0;
+padding:7px 0;
+}
+
+.avia_dark_skin .avia_feedback_box_comment_gravatar img {
+border:1px solid #333;
+padding:3px;
+background: #000;
+}
+
+.avia_dark_skin .avia_feedback_box_comment_author{
+
+font-size: 12px;
+text-shadow: 1px 1px 0px #000;
+padding-top: 2px;
+}
+
+.avia_dark_skin .avia_ajax_loader{
+top:65px;
+}
+
+.avia_dark_skin input{
+background:#222;
+padding:7px 7px;
+border:1px solid #333;
+box-shadow:none;
+color:#666;
+}
+
+.avia_dark_skin textarea{
+background:#222;
+padding:7px 3px;
+border:1px solid #333;
+width:98%;
+color:#666;
+}
+
+.avia_dark_skin .avia_text_button{
+background: url("images/dark/background_small.png") repeat-x scroll left bottom #343434;
+}
+
+.avia_dark_skin .avia_text_button:hover{
+color:#fff;
+background: #111;
+}
+
+.avia_dark_skin label{
+font-size: 11px;
+color: #999;
+}
+
+.avia_dark_skin .avia_feedback_status{
+text-indent: -9999px;
+}
+
+.avia_dark_skin .avia_feedback_status_info{
+background:url("images/dark/info.png") no-repeat center center transparent;
+}
+
+.avia_dark_skin .avia_feedback_status_progress{
+background:url("images/dark/progress.png") no-repeat center center transparent;
+}
+
+.avia_dark_skin .avia_feedback_status_completed{
+background:url("images/dark/closed.png") no-repeat center center transparent;
+}
+
+.avia_dark_skin .avia_feedback_status_declined{
+background:url("images/dark/declined.png") no-repeat center center transparent;
+}
+
+.avia_dark_skin .avia_notification{
+background:url("images/dark/background_small.png") repeat-x scroll left bottom #343434;
+border:1px solid #333;
+color:#999999;
+font-size:11px;
+line-height:19px;
+margin-bottom:20px;
+padding:10px;
+}
+
+.avia_dark_skin .avia_notification_icon{
+height:24px;
+width:24px;
+float:left;
+display: block;
+margin: 7px 13px 7px 4px;
+}
+
+.avia_dark_skin .avia_icon_avia_success{
+background:url("images/dark/closed.png") no-repeat center center transparent;
+}
+
+.avia_dark_skin .avia_icon_avia_error{
+background:url("images/dark/info.png") no-repeat center center transparent;
+}
+
+.avia_dark_skin #avia_feedback_ajaxed .avia_inactive, .avia_dark_skin #avia_feedback_ajaxed .avia_inactive:hover{
+color:#aaa;
+background:url("images/dark/background_small.png") repeat-x scroll left 10px #343434;
+cursor:default;
+}
+
+body .avia_info_hover_dark_skin{
+font-size:12px;
+padding:14px 20px;
+font-family: "Arial","Helvetca";
+}
+
+body .avia_info_hover_dark_skin p {
+padding:0.5em 0;
+}
+
+
+.avia_dark_skin .avia_ajax_loader {
+background:url("images/dark/preload.gif") no-repeat scroll center center transparent;
+}
+
+
+
+
+
+
+
+
+
+
