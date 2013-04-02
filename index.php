@@ -183,6 +183,11 @@ if(!function_exists('avia_feedbackbox_init'))
 			$query_string .= $sort;
 			if($id != "") $query_string .= "&p=".$id;
 			
+			// Filter based on taxonomy
+			if ( isset( $_REQUEST['category'] ) && $_REQUEST['category'] != '' ) {
+				$query_string .= "&taxonomy=feedback-categories&term=" . $_REQUEST['category'];
+			}
+			
 			// send query
 			$feedback = new WP_Query($query_string); 
 			

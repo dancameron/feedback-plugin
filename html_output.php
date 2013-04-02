@@ -323,7 +323,7 @@ if(!function_exists('avia_feedback_url_builder'))
 		
 		if(!$append) $connector = "";
 		
-		return $link.$connector.$append;
+		return add_query_arg( $_REQUEST, $link.$connector.$append );
 	}
 }
 
