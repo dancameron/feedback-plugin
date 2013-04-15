@@ -189,12 +189,11 @@ if(!function_exists('avia_feedbackbox_init'))
 			}
 			
 			// send query
-			$feedback = new WP_Query($query_string); 
+			$feedback = new WP_Query( $query_string ); 
 			
 			return $feedback;
 		}
-		
-				
+
 		
 		/**
 		* Function that checks the submitted feedback entry and saves it to the database

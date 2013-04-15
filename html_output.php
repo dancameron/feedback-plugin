@@ -182,6 +182,7 @@ if(!function_exists('avia_feedback_commentform'))
 			$feedbackHTML .= "			<p class='avia_hidden'><label class='avia_hidden' for='avia_".$context."_website'>If you are human dont fill in this field:</label>";
 			$feedbackHTML .= "			<input type='text' value='' class='avia_text_input avia_hidden' name='avia_".$context."_website' id='avia_".$context."_website' /></p>";
 			/* * * */
+			$feedbackHTML .= '<p class="info">Please use the suggestion tool below to submit any feature ideas. Do not use this to submit support requests. Support issues are handled via the <a title="Support Forums" href="http://groupbuyingsite.com/forums"><strong>support forums</strong></a>.</p>';
 			
 			$feedbackHTML .= "			<p>";
 			$feedbackHTML .= "			<label for='avia_".$context."_message'>Your Message</label>";
